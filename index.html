@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Autocomplete Test</title>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="cardnumber">Card information</label>
+        <input name="cardnumber" inputmode="numeric" autocomplete="cc-number" aria-label="Credit or debit card number" placeholder="1234 1234 1234 1234" required="" type="text" dir="ltr" value="">
+        <input name="expiry" inputmode="numeric" autocomplete="cc-exp" aria-label="Credit or debit card expiration date" placeholder="MM / YY" required="" maxlength="7" type="text" dir="ltr" value="">
+        <input name="cvc" inputmode="numeric" autocomplete="cc-csc" aria-label="Credit or debit card CVC/CVV/CID" placeholder="CVC" required="" type="text" dir="ltr" class="Input css-dlljyn" value="">
+
+        <label for="name">Name on card</label>
+        <input name="name" autocomplete="cc-name" dir="ltr" value="">
+    </form>
+</body>
+
+</html>
